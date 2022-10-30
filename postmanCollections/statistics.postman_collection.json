@@ -1,0 +1,41 @@
+{
+	"info": {
+		"_postman_id": "d0eae468-944d-4a13-b909-fd91c34f0524",
+		"name": "statistics",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/statistics/allStatistics/1?Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjY3MTc5NjQyLCJleHAiOjE2NjcyNjYwNDJ9.vSrkElX_dXSXFWsI5PqJ7uXMjyXnRIdJZV2Hv4cPqwxjz1w6DUSgRten3rZIttIu89mkbceEaNLSRVHEyJwb5Q",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjY3MjMzNDQ1LCJleHAiOjE2NjczMDMyNDV9._qGEI375udLx0nd-spyG2Sy99RwXZYeAxpBla0t8Wq9x0IaJ3bWxQNkyjsEdMjjzyGRIJEgiaBdiJVKpoI9Q5g",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/statistics/allStatistics/1?Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjY3MTc5NjQyLCJleHAiOjE2NjcyNjYwNDJ9.vSrkElX_dXSXFWsI5PqJ7uXMjyXnRIdJZV2Hv4cPqwxjz1w6DUSgRten3rZIttIu89mkbceEaNLSRVHEyJwb5Q",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"statistics",
+						"allStatistics",
+						"1"
+					],
+					"query": [
+						{
+							"key": "Authorization",
+							"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjY3MTc5NjQyLCJleHAiOjE2NjcyNjYwNDJ9.vSrkElX_dXSXFWsI5PqJ7uXMjyXnRIdJZV2Hv4cPqwxjz1w6DUSgRten3rZIttIu89mkbceEaNLSRVHEyJwb5Q"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

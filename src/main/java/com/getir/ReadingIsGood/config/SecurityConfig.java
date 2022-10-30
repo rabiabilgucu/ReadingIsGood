@@ -27,7 +27,6 @@ import org.springframework.web.filter.CorsFilter;
 @EnableWebSecurity
 public class SecurityConfig {
 
-    @Autowired
     private UserDetailsServiceImpl userDetailsService;
 
     private JwtAuthenticationEntryPoint handler;
@@ -79,13 +78,9 @@ public class SecurityConfig {
                 .exceptionHandling().authenticationEntryPoint(handler).and()
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS).and()
                 .authorizeRequests()
-                .antMatchers(HttpMethod.GET, "/v2/api-docs")
+                .antMatchers(HttpMethod.GET, "/posts")
                 .permitAll()
-                .antMatchers(HttpMethod.GET, "/swagger-resources/**")
-                .permitAll()
-                .antMatchers(HttpMethod.GET, "/swagger-ui.html")
-                .permitAll()
-                .antMatchers(HttpMethod.GET, "/webjars/**")
+                .antMatchers(HttpMethod.GET, "/comments")
                 .permitAll()
                 .antMatchers("/auth/**")
                 .permitAll()

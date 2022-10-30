@@ -1,0 +1,146 @@
+{
+	"info": {
+		"_postman_id": "dee26119-d70f-4a56-89b6-d2faac5bc747",
+		"name": "order",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/order/addOrder",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjY3MjMzNDQ1LCJleHAiOjE2NjczMDMyNDV9._qGEI375udLx0nd-spyG2Sy99RwXZYeAxpBla0t8Wq9x0IaJ3bWxQNkyjsEdMjjzyGRIJEgiaBdiJVKpoI9Q5g",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"orderID\":1,\n    \"customerID\":1,\n    \"bookID\":2,\n    \"orderAmount\":2\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/order/updateStock",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"order",
+						"updateStock"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/order/getOrders/2022-10-31T19:00/2022-10-31T19:49",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjY3MjMzNDQ1LCJleHAiOjE2NjczMDMyNDV9._qGEI375udLx0nd-spyG2Sy99RwXZYeAxpBla0t8Wq9x0IaJ3bWxQNkyjsEdMjjzyGRIJEgiaBdiJVKpoI9Q5g",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/order/getOrders/2022-10-31T19:00/2022-10-31T19:49",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"order",
+						"getOrders",
+						"2022-10-31T19:00",
+						"2022-10-31T19:49"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/order/updateStock",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjY3MjMzNDQ1LCJleHAiOjE2NjczMDMyNDV9._qGEI375udLx0nd-spyG2Sy99RwXZYeAxpBla0t8Wq9x0IaJ3bWxQNkyjsEdMjjzyGRIJEgiaBdiJVKpoI9Q5g",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/order/orderDetails/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"order",
+						"orderDetails",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/order/updateStock",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjY3MjMzNDQ1LCJleHAiOjE2NjczMDMyNDV9._qGEI375udLx0nd-spyG2Sy99RwXZYeAxpBla0t8Wq9x0IaJ3bWxQNkyjsEdMjjzyGRIJEgiaBdiJVKpoI9Q5g",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/order/orderDetails/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"order",
+						"orderDetails",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

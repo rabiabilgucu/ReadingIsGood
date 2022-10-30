@@ -1,0 +1,77 @@
+{
+	"info": {
+		"_postman_id": "dc20d440-4d2e-4f71-92dc-76a12b1c68ac",
+		"name": "book",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/book/addBook",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjY3MjMzNDQ1LCJleHAiOjE2NjczMDMyNDV9._qGEI375udLx0nd-spyG2Sy99RwXZYeAxpBla0t8Wq9x0IaJ3bWxQNkyjsEdMjjzyGRIJEgiaBdiJVKpoI9Q5g",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\":\"Yaprak Dökümü\",\n    \"author\":\"Reşat Nuri Güntekin\",\n    \"publisher\": \"Yapıl\",\n    \"category\": \"Klasik\",\n    \"quantity\": 10,\n    \"sales\":1,\n    \"price\": 99.99\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/book/addBook",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"book",
+						"addBook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/customer/updateBookStock",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjY3MjMzNDQ1LCJleHAiOjE2NjczMDMyNDV9._qGEI375udLx0nd-spyG2Sy99RwXZYeAxpBla0t8Wq9x0IaJ3bWxQNkyjsEdMjjzyGRIJEgiaBdiJVKpoI9Q5g",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\":\"Yaprak Dökümü\",\n    \"author\":\"Reşat Nuri Güntekin\",\n    \"publisher\": \"Yapıl\",\n    \"category\": \"Klasik\",\n    \"quantity\": 10,\n    \"sales\":1,\n    \"price\": 99.99\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/customer/updateBookStock",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customer",
+						"updateBookStock"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

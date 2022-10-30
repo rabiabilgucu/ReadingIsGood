@@ -1,0 +1,85 @@
+{
+	"info": {
+		"_postman_id": "cc15f8fb-21ee-4749-80a8-937f7f8a194c",
+		"name": "customer",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/customer/createCustomer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjY3MjMzNDQ1LCJleHAiOjE2NjczMDMyNDV9._qGEI375udLx0nd-spyG2Sy99RwXZYeAxpBla0t8Wq9x0IaJ3bWxQNkyjsEdMjjzyGRIJEgiaBdiJVKpoI9Q5g",
+						"type": "default"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"getir\",\n    \"surname\":\"birmutluluk\",\n    \"phoneNumber\": \"054444\",\n    \"email\": \"getir@gmail.com\",\n    \"address\":\"ankara\"\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/customer/createCustomer",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customer",
+						"createCustomer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/customer/orderDetails/2?page=0&size=5",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjY3MjMzNDQ1LCJleHAiOjE2NjczMDMyNDV9._qGEI375udLx0nd-spyG2Sy99RwXZYeAxpBla0t8Wq9x0IaJ3bWxQNkyjsEdMjjzyGRIJEgiaBdiJVKpoI9Q5g",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/customer/orderDetails/2?page=0&size=5",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customer",
+						"orderDetails",
+						"2"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "0"
+						},
+						{
+							"key": "size",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
